@@ -1,0 +1,171 @@
+#Ma base de données : 
+
+DROP TABLE IF EXISTS StockKitchen;
+CREATE TABLE StockKitchen(
+        IDStock     Auto_increment (25),
+        PRIMARY KEY (IDStock)
+)ENGINE=InnoDB;
+
+
+
+DROP TABLE IF EXISTS Preparation;
+CREATE TABLE Preparation(
+        IDPreparation     Auto_increment (25),
+        NbrPart     Int (25),
+        DateCreation_Conserve     Int (25),
+        IDStock_StockKitchen     Auto_increment (25),
+        PRIMARY KEY (IDPreparation)
+)ENGINE=InnoDB;
+
+
+
+DROP TABLE IF EXISTS Ingredient;
+CREATE TABLE Ingredient(
+        IDIngredient     Auto_increment (25),
+        TypeIngredient     Varchar (25),
+        NameIngredient     Varchar (25),
+        IdContient_Contient     Int (25),
+        QuantitybyStock_Contient     Int (25),
+        DateReceipt_Contient     Datetime (25),
+        IDStock_StockKitchen     Auto_increment (25),
+        PRIMARY KEY (IDIngredient)
+)ENGINE=InnoDB;
+
+
+
+DROP TABLE IF EXISTS Order;
+CREATE TABLE Order(
+        IDOrder     Auto_increment (25),
+        StatusOrder     Bool (25),
+        IDTable_TableRest     Auto_increment (25),
+        PRIMARY KEY (IDOrder)
+)ENGINE=InnoDB;
+
+
+
+DROP TABLE IF EXISTS TableRest;
+CREATE TABLE TableRest(
+        IDTable     Auto_increment (25),
+        IDSquare     Int (25),
+        IDLine     Int (25),
+        MbrPlacesTable     Int (25),
+        StateTable     Int (25),
+        IDOrder_Order     Auto_increment (25),
+        idGroup_CustomerGroup     Auto_increment (25),
+        PRIMARY KEY (IDTable)
+)ENGINE=InnoDB;
+
+
+
+DROP TABLE IF EXISTS Tool;
+CREATE TABLE Tool(
+        IDTool     Auto_increment (25),
+        NameTool     Varchar (25),
+        TypeTool     Int (25),
+        StateTool     Bool (25),
+        QuantityToolStock_Stock     Int (25),
+        IDStockTool_StockTool     Auto_increment (25),
+        PRIMARY KEY (IDTool)
+)ENGINE=InnoDB;
+
+
+
+DROP TABLE IF EXISTS Task;
+CREATE TABLE Task(
+        IDTask     Auto_increment (25),
+        NameTask     Varchar (25),
+        TimeTask     Int (25),
+        IDStaff_Staff     Auto_increment (25),
+        PRIMARY KEY (IDTask)
+)ENGINE=InnoDB;
+
+
+
+DROP TABLE IF EXISTS StockTool;
+CREATE TABLE StockTool(
+        IDStockTool     Auto_increment (25),
+        PRIMARY KEY (IDStockTool)
+)ENGINE=InnoDB;
+
+
+
+DROP TABLE IF EXISTS Staff;
+CREATE TABLE Staff(
+        IDStaff     Auto_increment (25),
+        NameStaff     Varchar (25),
+        Job     Varchar (25),
+        IDTask_Task     Auto_increment (25),
+        PRIMARY KEY (IDStaff)
+)ENGINE=InnoDB;
+
+
+
+DROP TABLE IF EXISTS CustomerGroup;
+CREATE TABLE CustomerGroup(
+        idGroup     Auto_increment (25),
+        NbrCustomer     Int (25),
+        IDTable_TableRest     Auto_increment (25),
+        PRIMARY KEY (idGroup)
+)ENGINE=InnoDB;
+
+
+
+DROP TABLE IF EXISTS Require;
+CREATE TABLE Require(
+        QuantityIngridient     Int (25),
+        IDIngredient_Ingredient     Auto_increment (25),
+        IDTask_Task     Auto_increment (25),
+        PRIMARY KEY (IDIngredient_Ingredient,IDTask_Task)
+)ENGINE=InnoDB;
+
+
+
+DROP TABLE IF EXISTS Cut;
+CREATE TABLE Cut(
+        Order Task     Int (25),
+        IDPreparation_Preparation     Auto_increment (25),
+        IDTask_Task     Auto_increment (25),
+        PRIMARY KEY (IDPreparation_Preparation,IDTask_Task)
+)ENGINE=InnoDB;
+
+
+
+DROP TABLE IF EXISTS OrderLine;
+CREATE TABLE OrderLine(
+        QuantityRecipe     Int (25),
+        NameRecipe     Varchar (25),
+        CategoryRecipe     Int (25),
+        IDPreparation_Preparation     Auto_increment (25),
+        IDOrder_Order     Auto_increment (25),
+        PRIMARY KEY (IDPreparation_Preparation,IDOrder_Order)
+)ENGINE=InnoDB;
+
+
+
+DROP TABLE IF EXISTS Use;
+CREATE TABLE Use(
+        QuantityMaterial     Int (25),
+        IDTool_Tool     Auto_increment (25),
+        IDTask_Task     Auto_increment (25),
+        PRIMARY KEY (IDTool_Tool,IDTask_Task)
+)ENGINE=InnoDB;
+
+
+
+ALTER TABLE Preparation ADD CONSTRAINT FK_Preparation_IDStock_StockKitchen FOREIGN KEY (IDStock_StockKitchen) REFERENCES StockKitchen(IDStock)
+ALTER TABLE Ingredient ADD CONSTRAINT FK_Ingredient_IDStock_StockKitchen FOREIGN KEY (IDStock_StockKitchen) REFERENCES StockKitchen(IDStock)
+ALTER TABLE Order ADD CONSTRAINT FK_Order_IDTable_TableRest FOREIGN KEY (IDTable_TableRest) REFERENCES TableRest(IDTable)
+ALTER TABLE TableRest ADD CONSTRAINT FK_TableRest_IDOrder_Order FOREIGN KEY (IDOrder_Order) REFERENCES Order(IDOrder)
+ALTER TABLE TableRest ADD CONSTRAINT FK_TableRest_idGroup_CustomerGroup FOREIGN KEY (idGroup_CustomerGroup) REFERENCES CustomerGroup(idGroup)
+ALTER TABLE Tool ADD CONSTRAINT FK_Tool_IDStockTool_StockTool FOREIGN KEY (IDStockTool_StockTool) REFERENCES StockTool(IDStockTool)
+ALTER TABLE Task ADD CONSTRAINT FK_Task_IDStaff_Staff FOREIGN KEY (IDStaff_Staff) REFERENCES Staff(IDStaff)
+ALTER TABLE Staff ADD CONSTRAINT FK_Staff_IDTask_Task FOREIGN KEY (IDTask_Task) REFERENCES Task(IDTask)
+ALTER TABLE CustomerGroup ADD CONSTRAINT FK_CustomerGroup_IDTable_TableRest FOREIGN KEY (IDTable_TableRest) REFERENCES TableRest(IDTable)
+ALTER TABLE Require ADD CONSTRAINT FK_Require_IDIngredient_Ingredient FOREIGN KEY (IDIngredient_Ingredient) REFERENCES Ingredient(IDIngredient)
+ALTER TABLE Require ADD CONSTRAINT FK_Require_IDTask_Task FOREIGN KEY (IDTask_Task) REFERENCES Task(IDTask)
+ALTER TABLE Cut ADD CONSTRAINT FK_Cut_IDPreparation_Preparation FOREIGN KEY (IDPreparation_Preparation) REFERENCES Preparation(IDPreparation)
+ALTER TABLE Cut ADD CONSTRAINT FK_Cut_IDTask_Task FOREIGN KEY (IDTask_Task) REFERENCES Task(IDTask)
+ALTER TABLE OrderLine ADD CONSTRAINT FK_OrderLine_IDPreparation_Preparation FOREIGN KEY (IDPreparation_Preparation) REFERENCES Preparation(IDPreparation)
+ALTER TABLE OrderLine ADD CONSTRAINT FK_OrderLine_IDOrder_Order FOREIGN KEY (IDOrder_Order) REFERENCES Order(IDOrder)
+ALTER TABLE Use ADD CONSTRAINT FK_Use_IDTool_Tool FOREIGN KEY (IDTool_Tool) REFERENCES Tool(IDTool)
+ALTER TABLE Use ADD CONSTRAINT FK_Use_IDTask_Task FOREIGN KEY (IDTask_Task) REFERENCES Task(IDTask)
