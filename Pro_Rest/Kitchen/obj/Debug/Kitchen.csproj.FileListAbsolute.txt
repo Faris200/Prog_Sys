@@ -1,0 +1,6 @@
+C:\Users\chabinio\Documents\mes documents importants\mes Projets\projet X3\Projet Programmation sytème\Pro_Rest\Kitchen\bin\Debug\Kitchen.exe
+C:\Users\chabinio\Documents\mes documents importants\mes Projets\projet X3\Projet Programmation sytème\Pro_Rest\Kitchen\bin\Debug\Kitchen.pdb
+C:\Users\chabinio\Documents\mes documents importants\mes Projets\projet X3\Projet Programmation sytème\Pro_Rest\Kitchen\obj\Debug\Kitchen.csprojAssemblyReference.cache
+C:\Users\chabinio\Documents\mes documents importants\mes Projets\projet X3\Projet Programmation sytème\Pro_Rest\Kitchen\obj\Debug\Kitchen.csproj.CoreCompileInputs.cache
+C:\Users\chabinio\Documents\mes documents importants\mes Projets\projet X3\Projet Programmation sytème\Pro_Rest\Kitchen\obj\Debug\Kitchen.exe
+C:\Users\chabinio\Documents\mes documents importants\mes Projets\projet X3\Projet Programmation sytème\Pro_Rest\Kitchen\obj\Debug\Kitchen.pdb

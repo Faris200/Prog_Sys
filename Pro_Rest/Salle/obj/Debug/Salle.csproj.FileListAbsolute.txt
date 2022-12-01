@@ -1,0 +1,12 @@
+C:\Users\chabinio\Documents\mes documents importants\mes Projets\projet X3\Projet Programmation sytème\Pro_Rest\Salle\bin\Debug\Salle.exe.config
+C:\Users\chabinio\Documents\mes documents importants\mes Projets\projet X3\Projet Programmation sytème\Pro_Rest\Salle\bin\Debug\Salle.exe
+C:\Users\chabinio\Documents\mes documents importants\mes Projets\projet X3\Projet Programmation sytème\Pro_Rest\Salle\bin\Debug\Salle.pdb
+C:\Users\chabinio\Documents\mes documents importants\mes Projets\projet X3\Projet Programmation sytème\Pro_Rest\Salle\obj\Debug\Salle.csprojAssemblyReference.cache
+C:\Users\chabinio\Documents\mes documents importants\mes Projets\projet X3\Projet Programmation sytème\Pro_Rest\Salle\obj\Debug\Salle.csproj.CoreCompileInputs.cache
+C:\Users\chabinio\Documents\mes documents importants\mes Projets\projet X3\Projet Programmation sytème\Pro_Rest\Salle\obj\Debug\Salle.exe
+C:\Users\chabinio\Documents\mes documents importants\mes Projets\projet X3\Projet Programmation sytème\Pro_Rest\Salle\obj\Debug\Salle.pdb
+C:\Users\chabinio\Documents\mes documents importants\mes Projets\projet X3\Projet Programmation sytème\Pro_Rest\Salle\obj\Debug\Salle.View.Form1.resources
+C:\Users\chabinio\Documents\mes documents importants\mes Projets\projet X3\Projet Programmation sytème\Pro_Rest\Salle\obj\Debug\Salle.csproj.GenerateResource.cache
+C:\Users\chabinio\Documents\mes documents importants\mes Projets\projet X3\Projet Programmation sytème\Pro_Rest\Salle\obj\Debug\Salle.Properties.Resources.resources
+C:\Users\chabinio\Documents\mes documents importants\mes Projets\projet X3\Projet Programmation sytème\Pro_Rest\Salle\obj\Debug\Salle.View.Form2.resources
+C:\Users\chabinio\Documents\mes documents importants\mes Projets\projet X3\Projet Programmation sytème\Pro_Rest\Salle\obj\Debug\Salle.View.Form3.resources
