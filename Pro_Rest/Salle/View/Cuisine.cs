@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Salle.View
 {
-    public partial class Form2 : Form
+    public partial class Cuisine : Form
     {
-        public Form2()
+        public Cuisine()
         {
             InitializeComponent();
         }
@@ -21,5 +21,14 @@ namespace Salle.View
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+                    }
     }
 }

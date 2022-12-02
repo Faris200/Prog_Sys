@@ -43,7 +43,7 @@ namespace Salle
             new Pause().AddThread(threadAccueilMaitreHotel);
             threadAccueilMaitreHotel.Start();
 
-            Application.Run(new Form1());
+            Application.Run(new Accueil());
 
             while (true)
             {
@@ -124,8 +124,8 @@ namespace Salle
             CLprocessus process = new CLprocessus();
 
             //Récupération des Clients possédant le même id que le scénario
-            DataSet setDataClients = process.GetListClients("Projet_Syst", id);
-            //DataSet setDataCommandes = process.GetListCommand("Projet_Syst", 0);
+            DataSet setDataClients = process.GetListClients("Prog_Sys", id);
+            DataSet setDataCommandes = process.GetListCommand("Prog_Sys", 0);
 
             int IDBooking = 0;
             int NbrBookers = 0;

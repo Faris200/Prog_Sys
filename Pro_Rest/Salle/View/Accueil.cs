@@ -10,23 +10,34 @@ using System.Windows.Forms;
 
 namespace Salle.View
 {
-    public partial class Form1 : Form
+    public partial class Accueil : Form
     {
-        public Form1()
+        public Accueil()
         {
             InitializeComponent();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Form2 Form2 = new Form2();
+            Restaurant Form2 = new Restaurant();
             Form2.Show();
             this.Hide();
 
-            Form3 Form3 = new Form3();
+            Cuisine Form3 = new Cuisine();
             Form3.Show();
             this.Hide();
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Restaurant Form2 = new Restaurant();
+            Form2.Show();
+            this.Hide();
+
+            Cuisine Form3 = new Cuisine();
+            Form3.Show();
+            this.Hide();
         }
     }
 }

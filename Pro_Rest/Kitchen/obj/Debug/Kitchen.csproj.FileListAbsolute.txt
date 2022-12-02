@@ -4,3 +4,11 @@ C:\Users\chabinio\Documents\mes documents importants\mes Projets\projet X3\Proje
 C:\Users\chabinio\Documents\mes documents importants\mes Projets\projet X3\Projet Programmation sytème\Pro_Rest\Kitchen\obj\Debug\Kitchen.csproj.CoreCompileInputs.cache
 C:\Users\chabinio\Documents\mes documents importants\mes Projets\projet X3\Projet Programmation sytème\Pro_Rest\Kitchen\obj\Debug\Kitchen.exe
 C:\Users\chabinio\Documents\mes documents importants\mes Projets\projet X3\Projet Programmation sytème\Pro_Rest\Kitchen\obj\Debug\Kitchen.pdb
+D:\Ecole\Projets\Troisieme Annee\Programmation concurrente\Pro_Rest\Kitchen\bin\Debug\Kitchen.exe.config
+D:\Ecole\Projets\Troisieme Annee\Programmation concurrente\Pro_Rest\Kitchen\bin\Debug\Kitchen.exe
+D:\Ecole\Projets\Troisieme Annee\Programmation concurrente\Pro_Rest\Kitchen\bin\Debug\Kitchen.pdb
+D:\Ecole\Projets\Troisieme Annee\Programmation concurrente\Pro_Rest\Kitchen\obj\Debug\Kitchen.csproj.AssemblyReference.cache
+D:\Ecole\Projets\Troisieme Annee\Programmation concurrente\Pro_Rest\Kitchen\obj\Debug\Kitchen.csproj.SuggestedBindingRedirects.cache
+D:\Ecole\Projets\Troisieme Annee\Programmation concurrente\Pro_Rest\Kitchen\obj\Debug\Kitchen.csproj.CoreCompileInputs.cache
+D:\Ecole\Projets\Troisieme Annee\Programmation concurrente\Pro_Rest\Kitchen\obj\Debug\Kitchen.exe
+D:\Ecole\Projets\Troisieme Annee\Programmation concurrente\Pro_Rest\Kitchen\obj\Debug\Kitchen.pdb

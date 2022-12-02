@@ -10,3 +10,16 @@ C:\Users\chabinio\Documents\mes documents importants\mes Projets\projet X3\Proje
 C:\Users\chabinio\Documents\mes documents importants\mes Projets\projet X3\Projet Programmation sytème\Pro_Rest\Salle\obj\Debug\Salle.Properties.Resources.resources
 C:\Users\chabinio\Documents\mes documents importants\mes Projets\projet X3\Projet Programmation sytème\Pro_Rest\Salle\obj\Debug\Salle.View.Form2.resources
 C:\Users\chabinio\Documents\mes documents importants\mes Projets\projet X3\Projet Programmation sytème\Pro_Rest\Salle\obj\Debug\Salle.View.Form3.resources
+D:\Ecole\Projets\Troisieme Annee\Programmation concurrente\Pro_Rest\Salle\bin\Debug\Salle.exe.config
+D:\Ecole\Projets\Troisieme Annee\Programmation concurrente\Pro_Rest\Salle\bin\Debug\Salle.exe
+D:\Ecole\Projets\Troisieme Annee\Programmation concurrente\Pro_Rest\Salle\bin\Debug\Salle.pdb
+D:\Ecole\Projets\Troisieme Annee\Programmation concurrente\Pro_Rest\Salle\obj\Debug\Salle.csproj.AssemblyReference.cache
+D:\Ecole\Projets\Troisieme Annee\Programmation concurrente\Pro_Rest\Salle\obj\Debug\Salle.csproj.SuggestedBindingRedirects.cache
+D:\Ecole\Projets\Troisieme Annee\Programmation concurrente\Pro_Rest\Salle\obj\Debug\Salle.Properties.Resources.resources
+D:\Ecole\Projets\Troisieme Annee\Programmation concurrente\Pro_Rest\Salle\obj\Debug\Salle.csproj.GenerateResource.cache
+D:\Ecole\Projets\Troisieme Annee\Programmation concurrente\Pro_Rest\Salle\obj\Debug\Salle.csproj.CoreCompileInputs.cache
+D:\Ecole\Projets\Troisieme Annee\Programmation concurrente\Pro_Rest\Salle\obj\Debug\Salle.exe
+D:\Ecole\Projets\Troisieme Annee\Programmation concurrente\Pro_Rest\Salle\obj\Debug\Salle.pdb
+D:\Ecole\Projets\Troisieme Annee\Programmation concurrente\Pro_Rest\Salle\obj\Debug\Salle.View.Cuisine.resources
+D:\Ecole\Projets\Troisieme Annee\Programmation concurrente\Pro_Rest\Salle\obj\Debug\Salle.View.Accueil.resources
+D:\Ecole\Projets\Troisieme Annee\Programmation concurrente\Pro_Rest\Salle\obj\Debug\Salle.View.Restaurant.resources

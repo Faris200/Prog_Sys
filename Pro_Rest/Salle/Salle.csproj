@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Salle</RootNamespace>
     <AssemblyName>Salle</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -27,6 +27,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -143,23 +144,23 @@
     <Compile Include="Sockets\OrderDesk.cs" />
     <Compile Include="View\Affichage.cs" />
     <Compile Include="View\Elements.cs" />
-    <Compile Include="View\Form1.cs">
+    <Compile Include="View\Accueil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="View\Accueil.Designer.cs">
+      <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Form2.cs">
+    <Compile Include="View\Restaurant.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="View\Restaurant.Designer.cs">
+      <DependentUpon>Restaurant.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Form3.cs">
+    <Compile Include="View\Cuisine.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="View\Cuisine.Designer.cs">
+      <DependentUpon>Cuisine.cs</DependentUpon>
     </Compile>
     <Compile Include="View\InterfaceAffichage.cs" />
     <Compile Include="View\Movable.cs" />
@@ -174,14 +175,14 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="View\Accueil.resx">
+      <DependentUpon>Accueil.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="View\Restaurant.resx">
+      <DependentUpon>Restaurant.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="View\Cuisine.resx">
+      <DependentUpon>Cuisine.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using Kitchen.Model;
 using System.Collections.Generic;
 using System.Linq;
@@ -283,7 +282,7 @@ namespace Kitchen.Controller
                         {
                             count = 1;
                         }
-                        setData = process.GetListCommand("Projet_Syst2", ord.ListDesserts[i], 2);
+                        setData = process.GetListCommand("Prog_Sys", ord.ListDesserts[i], 2);
                         afficher.afficherLine("\n" + count + " instances of dessert n°" + ord.ListDesserts[i]+" needed");
 
                         foreach (DataRow dr in setData.Tables[0].Rows)
@@ -320,7 +319,7 @@ namespace Kitchen.Controller
                             {
                                 count = 1;
                             }
-                            setData = process.GetListCommand("Projet_Syst2", ord.ListPlats[i], 1);
+                            setData = process.GetListCommand("Prog_Sys", ord.ListPlats[i], 1);
                             afficher.afficherLine("\n" + count + " instances of the Main Dish n°" + ord.ListPlats[i]+" needed");
 
                             foreach (DataRow dr in setData.Tables[0].Rows)
@@ -354,7 +353,7 @@ namespace Kitchen.Controller
                             {
                                 count = 1;
                             }
-                            setData = process.GetListCommand("Projet_Syst2", ord.ListEntries[i], 0);
+                            setData = process.GetListCommand("Prog_Sys", ord.ListEntries[i], 0);
                             afficher.afficherLine("\n"+count + " instances of entry n°" + ord.ListEntries[i]+" needed");
 
 
